@@ -9,7 +9,7 @@ myst:
 
 You can manage your Ubuntu Core device deployments with the Landscape Client snap and the Landscape web portal. This guide demonstrates how you can deploy your devices at scale by building a custom Ubuntu Core image that includes the Landscape Client snap and configuring the image to automatically register each device after its first boot.
 
-The example provided here is based on [Ubuntu Core’s tutorial for building your first Ubuntu Core image](https://documentation.ubuntu.com/core/tutorials/build-your-first-image/index.html). It uses a Raspberry Pi running Ubuntu Core 24, but the instructions still generally apply to other devices and configurations.
+The example provided here is based on [Ubuntu Core’s tutorial for building your first Ubuntu Core image](https://documentation.ubuntu.com/core/tutorials/build-your-first-image/). It uses a Raspberry Pi running Ubuntu Core 24, but the instructions still generally apply to other devices and configurations.
 
 ## Prerequisites
 
@@ -37,7 +37,7 @@ For other reference models for supported Ubuntu Core devices, see the [`canonica
 
 ### Edit the reference model assertion
 
-You need to edit the model file to set `authority-id` and `brand-id` to your own developer ID. These properties define the authority responsible for the image. You can retrieve your developer ID with the `snapcraft whoami` command. For more information, see [Ubuntu Core’s guide on creating a model assertion](https://documentation.ubuntu.com/core/tutorials/build-your-first-image/create-a-model/index.html).
+You need to edit the model file to set `authority-id` and `brand-id` to your own developer ID. These properties define the authority responsible for the image. You can retrieve your developer ID with the `snapcraft whoami` command. For more information, see [Ubuntu Core’s guide on creating a model assertion](https://documentation.ubuntu.com/core/tutorials/build-your-first-image/create-a-model/).
 
 You can use a text editor to edit these properties. Your model file will be similar to the following:
 
@@ -111,7 +111,7 @@ Instead, you can pre-configure the client with your information when building yo
 
 ### Create and configure a gadget snap with your account details and auto-registration
 
-You need to create a gadget snap to configure the client when building your image. A "gadget snap" is a special type of snap that contains device specific support code and data. For more information on gadget snaps, see [Snapcraft’s documentation on gadget snaps](https://documentation.ubuntu.com/core/reference/gadget-snap-format/index.html).
+You need to create a gadget snap to configure the client when building your image. A "gadget snap" is a special type of snap that contains device specific support code and data. For more information on gadget snaps, see [Snapcraft’s documentation on gadget snaps](https://documentation.ubuntu.com/core/reference/gadget-snap-format/).
 
 To create and configure your gadget snap:
 
